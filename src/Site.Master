@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AzureJobs.Web.Site" %>
+
+<!doctype html>
+<html>
+<head runat="server">
+    <title><%= Page.Title %> - LigerShark Azure Jobs</title>
+    <link href="/css/master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+
+    <div id="menu" role="menu">
+        <nav>
+            <a href="/">Home</a>
+
+            <ul>
+                <li><a href="/imageoptimization/">Image Optimization</a></li>
+                <li><a href="/minification/">Minification</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <asp:ContentPlaceHolder ID="body" runat="server" />
+
+    <footer role="contentinfo">
+        <p>Copyright &copy; <a href="http://github.com/ligershark" rel="author">LigerShark</a></p>
+    </footer>
+</body>
+</html>
